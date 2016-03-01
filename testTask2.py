@@ -1,10 +1,13 @@
-i = 758965444
+i = 323425523
 
 
 def to_st(k):
     list_num = []
     if k < 0 or k >= 1000000000:
         print('ERROR! 0 <= n < 1000000000')
+        quit()
+    if k == 0:
+        print('0')
         quit()
     while k != 0:
         k, r = divmod(k, 10)
